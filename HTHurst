@@ -1,0 +1,10 @@
+fig <- plot_ly(HTHurst, x = -Latitude, y = -Longitude, z = -Elevation,
+               marker = list(colour = -Power, colorscale = c('#FFE1A1', '683531'), showscale = TRUE))
+               
+               
+fig <- fig %>% add_marker()
+fig <- fig %>% layout(scene = list(xaxis = list(title = 'Latitude'),
+                                   yaxis = list(title = 'Longitude'),
+                                   zaxis = list(title = 'Elevation')))
+                                   
+fig                                   
